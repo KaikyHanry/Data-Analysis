@@ -43,14 +43,3 @@ def render_signal_group(
         mime="image/png",
         key=f"download_png_{graph_id}"
     )
-
-    # exporta HTML interativo
-    html_bytes = fig.to_html().encode()
-
-    st.download_button(
-        label="Baixar gráfico HTML",
-        data=html_bytes,
-        file_name=f"{file_name}.html",
-        mime="text/html",
-        key=f"download_html_{graph_id}"
-    )
