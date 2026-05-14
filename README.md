@@ -17,10 +17,3 @@ Aplicação desenvolvida em Streamlit para:
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
-
----
-
-No terminal:
-
-```bash id="5jlwm8"
-git init
