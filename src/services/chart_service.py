@@ -4,7 +4,9 @@ def create_signal_plot(
     x,
     signals,
     selected_signals,
-    title="Sinais"
+    title="Sinais",
+    y_min=None,
+    y_max=None
 ):
 
     fig = go.Figure()
@@ -28,5 +30,8 @@ def create_signal_plot(
         template="plotly_dark",
         height=500
     )
+
+    if y_min is not None:
+        fig.update_yaxes(range=[y_min, y_max])
 
     return fig
